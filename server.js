@@ -9,6 +9,8 @@ app.use((req, res) => {
   res.sendFile(path.resolve(__dirname, 'dist/index.html'));
 });
 
-app.listen(5000, () => {
-  console.log(`Server is listening on port: 5000`);
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => {
+  console.log(`Server is listening on port new: ${port}`);
 });

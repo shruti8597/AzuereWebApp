@@ -6,7 +6,7 @@
   "license": "MIT",
   "author": "Microsoft",
   "scripts": {
-    "build": "webpack --config webpack.config.js && node server",
+    "build": "webpack --config webpack.config.js",
     "start": "node server"
   },
   "dependencies": {
